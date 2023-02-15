@@ -1,28 +1,113 @@
 ## ChatGPT metadata
-### main
 
-| Metadata | Description | Examples | Common Values |
-| --- | --- | --- | --- |
-| Prompt | The text used to initiate the conversation | "What's your favorite color?" | N/A |
-| Model | The name or ID of the GPT model used to generate the response | "gpt-2", "davinci", "curie" | N/A |
-| Temperature | Controls the creativity of the generated response | 0.5, 1.0, 1.5 | 0.1-1.5 |
-| Top k | Controls the number of most likely words to be used in the response | 10, 50, 100 | 10-100 |
-| Top p | Controls the diversity of the generated response | 0.5, 0.9, 0.95 | 0.1-0.95 |
-| Presence penalty | Controls the presence of specific words in the generated response | {"penalty": 0.5, "words": \["apple", "banana"\]} | 0.1-1.0 |
-| Frequency penalty | Controls the repetition of the generated response | 0.5, 0.75, 1.0 | 0.1-1.0 |
-| Stop sequence | Specifies a sequence of tokens that will stop the generation | "END\_OF\_SENTENCE\_TOKEN", "###" | N/A |
-| Timeout | Specifies a time limit for generating the response | 10, 30, 60 | N/A |
-| Max tokens | Limits the length of the generated response in tokens | 50, 100, 200 | 10-2048 |
-| Max characters | Limits the length of the generated response in characters | 500, 1000, 2000 | 10-65,536 |
-| Best of | Specifies the number of responses to generate and returns the highest scoring one | 1, 3, 5 | 1-10 |
-| Logprobs | Returns the log probabilities for each token in the generated response | true, false | true/false |
-| Echo | Echoes the prompt in the generated response | true, false | true/false |
-| Expand | Expands all occurrences of a token to a list of similar tokens | {"text": "color", "expand\_to": \["red", "blue"\]} | N/A |
-| Metadata | Includes additional metadata to be used in the generation process | {"genre": "science fiction", "author": "Asimov"} | N/A |
-| Topp | Same as Top p, but with a different calculation for determining the size of the set of candidates | 0.5, 0.9, 0.95 | 0.1-0.95 |
-| Nucleus Sampling | Same as Top p, but instead of selecting the top k words with probabilities greater than a given threshold, it selects the minimum set of words necessary such that the total probability mass is greater than or equal to the threshold | 0.5, |  |
 
-### additional
+
+## Using the Prompt
+
+The `Prompt:` keyword can be used to ask a question or provide a task to the reader.
+It can be used in a variety of ways, including:
+
+* Asking a question
+* Providing instructions
+* Making a request
+
+### Examples
+
+Here are some examples of how to use the `Prompt:` keyword:
+
+* **Prompt:** What is the best way to learn a new language?
+* **Prompt:** Describe the steps to make a cup of tea.
+* **Prompt:** Please provide a list of the top five books on your reading list.
+
+
+## Using "Topic:"
+
+The "Topic:" field is a useful way to organize conversations in chat applications.
+It allows users to quickly identify the topic of a conversation and join in if they are interested.
+
+Here are some examples of how to use the "Topic:" field:
+
+- **Group Chats:** Use the "Topic:" field to give a brief description of the conversation.
+For example, if you are having a group chat about a new project, you could use the "Topic:" field to say "New Project Discussion".
+
+- **Direct Messages:** Use the "Topic:" field to give a brief description of the conversation.
+For example, if you are having a direct message conversation about a new project, you could use the "Topic:" field to say "New Project Discussion".
+
+- **Group Projects:** Use the "Topic:" field to give a brief description of the project.
+For example, if you are working on a project together, you could use the "Topic:" field to say "Project X".
+
+- **Troubleshooting:** Use the "Topic:" field to give a brief description of the issue.
+For example, if you are troubleshooting a technical issue, you could use the "Topic:" field to say "Troubleshooting Issue X".
+
+## Using "Context:"
+
+The "Context:" keyword can be used to provide additional information about a topic or conversation.
+This can help to provide clarity and focus to the discussion.
+
+Examples of using "Context:" include:
+
+* Providing a brief description of the topic or conversation
+* Specifying the type of conversation (e.g.
+formal, informal, etc.)
+* Identifying the audience (e.g.
+experts, beginners, etc.)
+* Outlining the format restrictions (e.g.
+use markdown, use lists and tables, etc.)
+* Describing the purpose of the conversation (e.g.
+brainstorming, problem-solving, etc.)
+
+   
+
+## Using Audience to Target Your ChatGTP Messages
+
+ChatGTP is a powerful tool for targeting your messages to the right audience.
+By using the "Audience" field, you can ensure that your messages are seen by the people who are most likely to be interested in them.
+
+Here are some examples of how you can use the "Audience" field to target your messages:
+
+- **Newcomers:** If you're targeting people who are new to your product or service, you can use the "Audience" field to target messages to those who have recently joined your chat group.
+
+- **Experts:** If you're targeting people who are experienced in your product or service, you can use the "Audience" field to target messages to those who have been in the chat group for a while.
+
+- **Specific Groups:** If you're targeting a specific group of people, such as a particular age group or geographic area, you can use the "Audience" field to target messages to those who fit the criteria.
+
+By using the "Audience" field, you can ensure that your messages are seen by the people who are most likely to be interested in them.
+This will help you get the most out of your ChatGTP messages and ensure that your messages are seen by the right people.
+
+## Using the "Language" Metadata Keyword
+
+The "Language" metadata keyword is used to specify the language of a chat message.
+This is especially useful when communicating with people who speak different languages.
+
+### Examples
+
+#### Example 1
+
+If you are sending a message in Spanish, you can add the following metadata to the message:
+
+```
+Language: es
+```
+
+#### Example 2
+
+If you are sending a message in French, you can add the following metadata to the message:
+
+```
+Language: fr
+```
+
+#### Example 3
+
+If you are sending a message in German, you can add the following metadata to the message:
+
+```
+Language: de
+```
+
+
+
+### Summary
 
  | Metadata | Description | Example Values | Common Values |
  | --- | --- | --- | --- |
@@ -39,5 +124,4 @@
  | Format | The format or structure of the prompt, such as a question, statement, or dialogue | "Question and answer format", "Dialogue between two people" | Varies based on use case |
  | Examples | Examples or templates of the type of prompt being requested or desired | "Write a story about...", "What is the definition of..." | Varies based on use case and type of prompt |
  | Keywords | Relevant keywords to be included in the prompt for search engine optimization or other purposes | "Travel, adventure, tourism", "Marketing, social media, branding" | Varies based on use case |
-
-
+ 
